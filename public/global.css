@@ -1,0 +1,61 @@
+body{
+	margin:0 ;
+	margin-top: 8px;
+
+	box-sizing: border-box;
+	background-color:#F6F8FC ;
+	 overflow: hidden; 
+font-family: arial,sans-serif;
+font-size: small;
+  
+}
+.bi-grid-3x3-gap-fill{
+  height: 40px;
+	width: 20px;
+	position: relative;
+	left:12px;
+	top:2px;
+	
+}
+.bi-list{
+	height: 40px;
+	width: 20px;
+	position: relative;
+	left:12px;
+	top:2px;
+	
+}
+.black-box{
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 3px;
+  position: relative;
+  width:fit-content;
+  height:fit-content;
+  color:white;
+  text-align: center;
+font-size: small;
+padding-top: 2px;
+  padding-bottom:4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+
+
+}
+
+.bi-arrow-down-short{
+position: relative;
+left:9px;
+top:1px
+}
+
+.wrap{
+  height: 40px;
+  width:40px;
+  border-radius: 20px;
+
+}
+
+
