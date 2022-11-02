@@ -1,13 +1,19 @@
 <script>
-  import App from "../App.svelte";
-  export let allungamento
-  import {createEventDispatcher } from 'svelte'
-let dispatch = createEventDispatcher()
+import {createEventDispatcher } from 'svelte'
+const dispatch = createEventDispatcher()
+export let allungamento
 export let valore
+
+
+
+
+
 valore = '@'
 
 let chiavi = (Object.keys(localStorage))
 let toggleEmail = false
+
+
  function emailSelected( ) {
 
 toggleEmail = !toggleEmail
