@@ -1,42 +1,28 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	const dispatch = createEventDispatcher();
 	export let allungamento;
 	export let valore;
 
-	valore = '@';
+	const dispatch = createEventDispatcher();
+	const favourites = () => {
+		select = !select;
+	};
+	const changeSent = () => {
+		tuttiInviati = false;
+		dispatch('cambiaInviati', tuttiInviati);
+	};
 
 	let chiavi = Object.keys(localStorage);
 	let toggleEmail = false;
+	let select = false;
+	let value;
+	let tuttiInviati;
 
 	function emailSelected() {
 		toggleEmail = !toggleEmail;
 	}
 
-	// })}
-
-	let select = false;
-
-	const favourites = () => {
-		select = !select;
-	};
-	let set = JSON.parse(localStorage.getItem(`${chiavi[1]}`));
-	let n = 1;
-	console.log(set);
-
-	const selecto = (chiave) => {
-		console.log('selected', chiave);
-	};
-	let value;
-
-	let tuttiInviati;
-	const changeSent = () => {
-		tuttiInviati = false;
-
-		dispatch('cambiaInviati', tuttiInviati);
-	};
-
-	let hour;
+	valore = '@';
 </script>
 
 <!-- creare email content che ne spara fuori solo uno , e poi ne metto tanti nel sent
