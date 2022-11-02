@@ -1,8 +1,10 @@
 <script>
 	import { dash } from '../iconservice';
 	import { createEventDispatcher } from 'svelte';
+
+	const dispatch = createEventDispatcher();
 	let ruota;
-	let dispatch = createEventDispatcher();
+
 	let dxPiccolo = false;
 	let chiudiDX = () => {
 		dxPiccolo = !dxPiccolo;

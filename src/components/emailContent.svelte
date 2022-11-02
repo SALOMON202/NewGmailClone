@@ -7,9 +7,9 @@
 	const favourites = () => {
 		select = !select;
 	};
-
+	const dispatch = createEventDispatcher();
 	let keys = Object.keys(sessionStorage);
-	let dispatch = createEventDispatcher();
+
 	let hour = new Date().getHours();
 	let minutes = new Date().getMinutes();
 	let select = false;

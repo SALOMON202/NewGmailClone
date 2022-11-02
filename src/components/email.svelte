@@ -41,7 +41,7 @@
 		dispatch('cambio', person);
 	};
 
-	let dispatch = createEventDispatcher();
+	const dispatch = createEventDispatcher();
 </script>
 
 <div class="email">

@@ -47,7 +47,7 @@
 		dispatch('aggiungiRisposta', oggetti);
 	};
 
-	let dispatch = createEventDispatcher();
+	const dispatch = createEventDispatcher();
 	let selezionata = false;
 	let toggleFooter = false;
 </script>
