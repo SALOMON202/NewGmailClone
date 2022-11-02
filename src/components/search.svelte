@@ -1,25 +1,17 @@
 <script>
-	// import {fade} from 'svelte/transition'
 	import { createEventDispatcher } from 'svelte';
-	const dispatch = createEventDispatcher();
 	import { lente, ricerca } from '../iconservice';
-	let active = false;
+	const dispatch = createEventDispatcher();
 	const switcher = () => {
 		active = !active;
 	};
-	const searchInput = document.querySelector('.searcher');
+
 	const watchInput = (e) => {
 		const value = e.target.value;
 
 		dispatch('inputValue', value);
 	};
-	// const selectSearching = document.querySelector('.searching-box');
-	// function activate() {
-	//   selectSearching.classList.add('selected');
-	// }
-	// function deActivate() {
-	//   selectSearching.classList.remove('selected');
-	// }
+	let active = false;
 </script>
 
 <div class="search-box {active ? 'active' : ''}">
@@ -44,8 +36,8 @@
 		</div>
 	</div>
 </div>
-<!--  background-color: #C2E7FF; -->
 
+<!--  background-color: #C2E7FF; -->
 <style>
 	.svg-box-lente {
 		height: 40px;
